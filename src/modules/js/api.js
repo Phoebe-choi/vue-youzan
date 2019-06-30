@@ -7,6 +7,9 @@ let url = {
 	subList:'/category/subList', //二级分类-普通分类
 	rank:'/category/rank', //二级分类-综合排行
 	searchList:'/search/list', //商品列表
+	details:'/goods/details', //商品详情
+	deal:'/goods/deal', //本店成交数据
+	addCart:'/cart/add',//加入购物车
 }
 
 let host = 'http://rap2api.taobao.org/app/mock/7058'
