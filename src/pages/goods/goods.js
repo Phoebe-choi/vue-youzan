@@ -42,6 +42,7 @@ new Vue({
             axios.get(url.details,{id}).then(res=>{
                 this.details = res.data.data
                 this.bannerLists = []
+                //遍历后台返回数据并push clickUrl和img进去
                 this.details.imgs.forEach(item=>{
                     this.bannerLists.push({
                         clickUrl:'',
@@ -51,6 +52,7 @@ new Vue({
             })
         },
         changeTab(index){ //商品详情和本店成交tab切换
+            console.log(index)
             this.tabIndex = index
             if(index){
                 this.getDeal()

@@ -45,7 +45,7 @@ let app = new Vue({
 					this.lists = curLists
 				}
 				this.loading = false
-				this.pageNum++
+				this.pageNum++;
 			})
 		},
 		getBanner(){
